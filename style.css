@@ -20,7 +20,7 @@ body{
 
 .container{
     width: 70%;
-    height: 70%;
+    min-height: 70%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -49,13 +49,19 @@ body{
     border: none;
     background-color: rgba(255, 255, 255, 0.6);
 }
+#Temperature:hover{
+    scale: 1.01;
+}
 #btn{
-    background-color: rgba(255, 255, 255, 0.6);;
+    background-color: rgba(255, 255, 255, 0.6);
     color: #000;
     padding: 10px 10px;
     border-radius: 10px;
     cursor: pointer;
     font-size: 1.05rem;
+}
+#btn:hover{
+    scale: 1.01;
 }
 #result {
     font-size: 2.5vw;
@@ -65,19 +71,37 @@ body{
 footer{
     position: absolute;
     width: 100%;
+    height: 10vh;
     display: flex;
-    justify-content: center;
     margin-bottom: 1vh;
 }
 footer h4{
     color: red;
     -webkit-text-stroke: 1px #FFF0C6;
     font-size: 2em;
+    text-align: center;
 }
 footer a{
     text-decoration: none;
     color: red;
     -webkit-text-stroke: 1px #FFF0C6;
+}
+.icons{
+    width: 3%;
+    aspect-ratio: 1/1;
+    margin: auto;
+}
+.icons img{
+    width: 100%;
+    height: 100%;
+}
+.icons img:hover{
+    scale: 1.05;
+}
+.git{
+    width: 3%;
+    background-color:rgba(255, 255, 255, 0.6);
+    border-radius: 50%;
 }
 
 /* Styling for specific videos */
@@ -112,3 +136,4 @@ video {
 #Temperature[value="Kelvin"] ~ #auttum-video {
     display: block;
 }
+

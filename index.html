@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature_Convertor</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Vidoes will be chnaged according to the Temperature -->
+
+<video autoplay muted loop id="default-video">
+    <source src="https://isurojit.github.io/temperature-converter/default.mp4" type="video/mp4">
+</video>
+<video autoplay muted loop id="summer-video">
+    <source src="https://isurojit.github.io/temperature-converter/summerseason.mp4" type="video/mp4">
+</video>
+<video autoplay muted loop id="auttum-video">
+    <source src="https://isurojit.github.io/temperature-converter/auttum.mp4" type="video/mp4">
+</video>
+<video autoplay muted loop id="winter-video">
+    <source src="https://isurojit.github.io/temperature-converter/winter.mp4" type="video/mp4">
+</video>
+
+<main>
+    <div class="container">
+        <h1>Temperature Convertor</h1>
+        <div class="subContainer">
+
+        <select id="Temperature">
+            <option value="#">Select Your Desire Temperature Unit:</option>
+            <option value="Celsius">Celsius</option>
+            <option value="Fahrenheit">Fahrenheit</option>
+            <option value="Kelvin">Kelvin</option>
+        </select>
+        <input type="number" placeholder="Enter Value Here..." id="ValueInput"><br>
+        <button id="btn">Calculate</button>
+        </div>
+        <div id="result"></div>
+    </div>
+</main>
+<footer>
+    <h4>Made with &#10084; by <a href="" target="_blank">Ankit</a></h4>
+</footer>
+
+
+
+<script src="script.js"></script>
+</body>
+</html>

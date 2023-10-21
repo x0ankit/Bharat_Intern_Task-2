@@ -20,7 +20,7 @@ main{
     width: 100%;
     height: 100%;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     flex-direction: column;
     align-items: center;
     flex-wrap: wrap;
@@ -40,7 +40,8 @@ main{
     position: absolute;
     top: 5%;
     -webkit-text-stroke: 1px #FFF0C6;
-    font-size: 4vw;
+    font-size: 4vmax;
+    text-wrap: wrap;
     text-align: center;
 }
 .subContainer{
@@ -147,12 +148,12 @@ video {
 }
 
 @media (max-width:600px) {
-    .subContainer{
-        min-width: 70%;
-        aspect-ratio: 1/1;
-        padding-top:10% ;
-        display: flex;
-        flex-direction: column;
+    .container{
+        width: 80%;
+        height: 70%;
+     }
+     .subContainer{
+        width: 80%;
     }
 }
 
